@@ -1,0 +1,3 @@
+[submodule "runsolver"]
+	path = runsolver
+	url = git@github.com:arthur-bit-monnot/runsolver.git
