@@ -9,7 +9,9 @@ from setuptools.command.build_py import build_py
 class Build(build_py):
     def run(self):
         make_runsolver = ["make", "runsolver"]
-        runsolver_dir = os.path.join(os.path.dirname(__file__), "runsolver")
+        runsolver_dir = os.path.join(
+            os.path.dirname(__file__), "runsolver", "runsolver"
+        )
         if subprocess.run(make_runsolver, cwd=runsolver_dir) != 0:
             sys.exit(-1)
         build_py.run(self)
