@@ -1,4 +1,4 @@
-[submodule "runsolver"]
-	path = src/runsolver
+[submodule "runsolver/runsolver"]
+	path = runsolver/runsolver
 	url = git@github.com:arthur-bit-monnot/runsolver.git
 	ignore = dirty
