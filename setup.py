@@ -8,7 +8,6 @@ from setuptools.command.build_py import build_py
 
 class Build(build_py):
     def run(self):
-        print("test")
         make_runsolver = ["make", "runsolver"]
         runsolver_dir = os.path.join(os.path.dirname(__file__), "runsolver")
         if subprocess.run(make_runsolver, cwd=runsolver_dir) != 0:
