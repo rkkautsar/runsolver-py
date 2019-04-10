@@ -21,4 +21,5 @@ setup(
     version="3.4.0",
     packages=find_packages(),
     cmdclass={"build_py": Build},
+    entry_points={"console_scripts": ["runsolver=runsolver:run"]},
 )
